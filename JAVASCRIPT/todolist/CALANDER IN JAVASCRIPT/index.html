@@ -1,0 +1,57 @@
+<!DOCtype html>
+<html>
+
+<head>
+  <title>Any Month Calendar</title>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/function.js"></script>
+
+</head>
+<h1>Your Calendar</h1>
+<body onLoad="setToday()">
+
+  <form name="calControl" onSubmit="return false;" method="post">
+    <table>
+      <tr>
+        <td colspan=7>
+          <select class="month_style" name="month" onChange="selectdate()">
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          <input type=text class="year_style" name="year" size=4 maxlength=4>
+          <input type="hidden" class="build_style" name="Go" value="Go to!" onClick="selectDate()">
+        </td>
+      </tr>
+  </form>
+  <form name="calButtons" method="post">
+    <tr>
+      <td id="navbar">
+        <input type=button class="btn_nav" name="previousYear" value=" <<  " onClick="setPreviousYear()">
+        <input type=button class="btn_nav" name="previousYear" value="  <  " onClick="setPreviousMonth()">
+        <!-- <input type=button class="btn_nav" name="previousYear" value="Today"  onClick="setToday()"> -->
+        <input type=button class="btn_nav" name="previousYear" value="  >  " onClick="setNextMonth()">
+        <input type=button class="btn_nav" name="previousYear" value="  >> " onClick="setNextYear()">
+      </td>
+      <tr>
+        <td><textarea font="Courier" class="area_style" name="calPage" rows=8 cols=22></textarea></td>
+        
+      </tr>
+    </tr>
+    </table>
+  </form>
+
+</body>
+<script src="js/function.js"></script>
+</html>

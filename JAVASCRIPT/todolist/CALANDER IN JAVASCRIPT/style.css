@@ -1,0 +1,86 @@
+.month_style {
+    text-align: center;
+    width: 70%;
+    background-color: antiquewhite;
+    font-size: 50px;
+    border: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+  }
+  
+  td {
+    width: 90%;
+  }
+  
+  
+  
+  select {
+    padding-left: 40%;
+    text-align: center;
+  }
+  
+  option {
+    text-align: center;
+  }
+  
+  #navbar {
+    padding-left: 30%;
+    padding-top: 5px;
+    background-color: Green;
+    padding-bottom: 5px;
+  }
+  
+  .year_style {
+    width: 29%;
+    background-color: antiquewhite;
+    font-size: 50px;
+    border: none;
+    text-align: center;
+  }
+  
+  tr {
+    width: 90%;
+  }
+  
+  .build_style {
+    background-color: buttonface;
+    width: 90%;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  textarea {
+    width: 90%;
+    padding-left: 30px;
+    border: solid;
+    border-color: blanchedalmond;
+    border-spacing: 9px;
+    overflow: hidden;
+    border-style: outset;
+  }
+  
+  .area_style {
+    background-color: darkseagreen;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 30px;
+  }
+  
+  
+  /*just remove the max-height
+   and max-width to move the textarea
+  */
+  
+  .btn_nav {
+    background-color: cadetblue;
+    color: white;
+    font-size: 40px;
+    cursor: auto;
+    margin-left: 20px;
+    font-weight: bold;
+    border: none;
+  }

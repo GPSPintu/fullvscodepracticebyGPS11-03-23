@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics</title>
+        <meta name="description" content="This is the description">
+        <style>@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+            @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
+            
+            @font-face {
+                font-family: "Booter - Zero Zero";
+                src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+                     url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+                font-weight: normal;
+                font-style: normal;
+            }
+            
+            * {
+                box-sizing: border-box;
+                font-family: Raleway;
+                color: #777;
+            }
+            
+            html, body {
+                margin: 0;
+                padding: 0;
+            }
+            
+            .nav ul {
+                margin: 0;
+            }
+            
+            .nav li {
+                display: inline;
+            }
+            
+            .nav a {
+                display: inline-block;
+                padding: .5em;
+                color: white;
+                text-decoration: none;
+            }
+            
+            .main-nav {
+                text-align: center;
+                font-size: 1.1em;
+                font-weight: lighter;
+                border-bottom: 1px solid rgba(255, 255, 255, .3)
+            }
+            
+            .main-nav li {
+                padding: 0 5%;
+            }
+            
+            .nav a:hover {
+                background-color: rgba(255, 255, 255, .3)
+            }
+            
+            .main-header {
+                background-color: rgba(0, 0, 0, .6);
+                background-image: url("Images/Header Background.jpg");
+                background-blend-mode: multiply;
+                background-size: cover;
+                padding-bottom: 30px;
+            }
+            
+            .band-name {
+                text-align: center;
+                margin: 0;
+                font-size: 4em;
+                font-family: "Booter - Zero Zero";
+                font-weight: normal;
+                color: white;
+            }
+            
+            .band-name-large {
+                font-size: 8em;
+            }
+            
+            .content-section {
+                margin: 1em;
+            }
+            
+            .container {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 0 1.5em;
+            }
+            .section-header {
+                font-family: "Metal Mania";
+                font-weight: normal;
+                color: #333;
+                text-align: center;
+                font-size: 2.5em;
+            }
+            
+            .about-band-image {
+                float: left;
+                height: 200px;
+                width: 200px;
+                margin: 15px;
+                border-radius: 50%;
+            }
+            
+            .main-footer {
+                background-color: #56CCF2;
+                color: white;
+                padding: .25em 0;
+            }
+            
+            .main-footer-container {
+                display: flex;
+                align-items: center;
+            }
+            
+            .main-footer-container ul {
+                flex-grow: 1;
+                text-align: end;
+            }
+            
+            .footer-nav li {
+                padding: 0 .5em;
+            }
+            
+            .footer-nav img {
+                width: 30px;
+                height: 30px;
+            }</style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <h1>The Generics</h1>
+            <button type="button">Get our Latest Album</button>
+            <br>
+            <br>
+            <!-- TODO: Find a suitable background image -->
+            <button type="button">&#9658;</button>
+        </header>
+        <section>
+            <h2>TOURS</h2>
+            <div>
+                <div>
+                    <strong>JUL 16</strong>
+                    &lt;&gt;
+                    <span>DETROIT, MI</span>
+                    &lt;&gt;
+                    <span>DTE ENERGY MUSIC THEATRE</span>
+                    &lt;&gt;
+                    <button type="button">BUY TICKETS</button>
+                    <hr>
+                </div>
+                <div>
+                    <strong>JUL 19</strong>
+                    &lt;&gt;
+                    <span>TORONTO, ON</span>
+                    &lt;&gt;
+                    <span>BUDWEISER STAGE</span>
+                    &lt;&gt;
+                    <button type="button">BUY TICKETS</button>
+                    <hr>
+                </div>
+                <div>
+                    <strong>JUL 22</strong>
+                    &lt;&gt;
+                    <span>BRISTOW, VA</span>
+                    &lt;&gt;
+                    <span>JIGGY LUBE LIVE</span>
+                    &lt;&gt;
+                    <button type="button">BUY TICKETS</button>
+                    <hr>
+                </div>
+                <div>
+                    <strong>JUL 29</strong>
+                    &lt;&gt;
+                    <span>PHOENIX, AZ</span>
+                    &lt;&gt;
+                    <span>AK-CHIN PAVILION</span>
+                    &lt;&gt;
+                    <button type="button">BUY TICKETS</button>
+                    <hr>
+                </div>
+                <div>
+                    <strong>AUG 2</strong>
+                    &lt;&gt;
+                    <span>LAS VEGAS, NV</span>
+                    &lt;&gt;
+                    <span>T-MOBILE ARENA</span>
+                    &lt;&gt;
+                    <button type="button">BUY TICKETS</button>
+                    <hr>
+                </div>
+                <div>
+                    <strong>AUG 7</strong>
+                    &lt;&gt;
+                    <span>CONCORD, CA</span>
+                    &lt;&gt;
+                    <span>CONCORD PAVILION</span>
+                    &lt;&gt;
+                    <button type="button">BUY TICKETS</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h3>The Generics</h3>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="Images/YouTube Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.spotify.com" target="_blank">
+                        <img src="Images/Spotify Logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="Images/Facebook Logo.png">
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

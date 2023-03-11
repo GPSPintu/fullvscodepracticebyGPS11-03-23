@@ -1,0 +1,403 @@
+                  //BASIC CODING//-
+
+//swap two number.
+
+var a = 6;
+var b = 8;
+a = a + b;
+b = a - b;
+a = a - b;
+console.log(a);
+console.log(b);
+                  
+//largest among two number
+
+var a = 7;
+var b = 29;
+if(a>b){
+  console.log(a);
+}
+else{
+  console.log(b)
+}
+ 
+//largest among three number
+ 
+var a = 8;
+var b = 79;
+var c = 93;
+if(a>b&&a>c){
+  console.log(a);
+}
+else if(b>c){
+  console.log(b);
+}
+else{
+  console.log(c);
+}
+ 
+//program to print the cost associated with it as shown in the image
+ 
+var distance= 400;
+let cost ;
+if(distance>=0 && distance<=100){
+  console.log(5);
+}
+else if(distance>100 && distance<=500){
+  console.log(8);
+}
+else if(distance>500 && distance<1000){
+  console.log(10);
+}
+else{
+  console.log(12);
+}
+   
+//Ternary Operator
+//programme to value of marks and print whether a person has failed or passed
+ 
+let marks;
+marks = 100;
+var result = marks>= 40? "pass":"fail";
+console.log(result);
+ 
+//programme to print the maximum of two number using Ternary operator.
+ 
+var a = 3;
+var b = 5;
+let max;
+max = a > b ? a : b;
+console.log(max);
+ 
+//SWITCH STATEMENT
+//Given the Day number, print the Day name in lower case corresponding to it by using the help of switch statement.
+//Note: Day 1 - is monday.
+//If the day is not valid example 1> day >7 then print invalid
+ 
+var day = 6;
+var dayname;
+ 
+switch(day){
+  case 1:
+    dayname = "monaday";
+    break;
+    case 2:
+      dayname = "tuesday";
+      break;
+      case 3:
+      dayname = "wednesday";
+      break;
+      case 4:
+      dayname = "thrusday";
+      break;
+      case 5:
+      dayname = "friday";
+      break;
+      case 6:
+      dayname = "satruday";
+      break;
+      case 7:
+      dayname = "sunday";
+      break;
+      default:
+      dayname = "invalid";
+}
+console.log(dayname);
+ 
+                    //LOOPS//
+
+//Write a program using only while loops to print all the even numbers from 1 to nInputif n = 10; 2,,6,8,10  
+let n = 10;//define the value of n
+let i = 1;//initialize the counter variable
+//start the while loop 
+while(i <= n){
+  //check if i is an even no.
+  if(i % 2 ===0){
+    //if i is even print it to the console
+    console.log(i);
+  }
+  i++;
+}
+ 
+//Print the following series using while loop1 4 9 16 25 36 …. n
+  
+  //Input
+  let k = 49;
+  let j = 1;
+  //while loop t0 print the series
+  while( j * j <= k){
+    console.log(j * j);
+    j++;
+  }
+  
+  //   continue and break statement
+  //Print all number from 1 to n but then it should not be divisible by 5
+  
+  let p = 7;
+  let m = 1;
+  
+  while(m <= p){
+    if( m%5 ===0){
+      m++;
+      continue;
+    }
+    console.log(m);
+    m++;
+  }
+ 
+ Write a program to print the digits of a number .
+
+Input:-
+
+N - 153 .
+
+output:-
+
+3
+
+5
+
+1
+ 
+ //Aramstrong
+ 
+var n = 153;
+// var p = 0 ;
+while(n> 0){
+  let digit = n %10;
+  console.log(digit);
+  n= Math.floor(n/10);
+}
+ 
+ logic - 153 is an Armstrong number because 1^3 + 5^3 + 3^3 = 1 +125 + 27 = 153 which is equal to the original number )
+ 
+var n = 153;
+var p  = 0;
+while(n>0)
+{
+  var digit = n%10;
+  p = p +(digit*digit*digit);
+  n= Math.floor(n/10);
+}
+console.log(p);
+ 
+ Write a program to print whether a given number is an Armstrong number or not..
+
+(Armstrong number is a number in which all the sum of cubes of digits is equal to the number
+
+Example:-
+
+Input
+
+n=153
+
+Output
+
+true
+
+let n = 150;
+let temp = n;
+let p = 0 , rem;
+while(n>0){
+  rem = n%10;
+  p= (p)+(rem*rem*rem);
+  n=Math.floor(n/10);
+  
+  if(temp==p){
+    console.log('true');
+    
+  }
+
+  else
+    console.log('false');
+  
+} 
+//8.Reverse the number
+
+// Function to reverse a number
+function reverseNumber(n) {
+let reversedNum = 0;
+
+// Loop to reverse the number
+while (n > 0) {
+reversedNum = (reversedNum * 10) + (n % 10);
+n = Math.floor(n / 10);
+}
+
+return reversedNum;
+}
+
+// Example usage
+const n = 153;
+const reversedNumber = reverseNumber(n);
+console.log(reversedNumber); // Output: 321
+
+9.Odd Number Series
+
+function printOddNumbers(n) {
+for (let i = 1; i <= n; i += 2) {
+console.log(i);
+}
+}
+
+// Example usage
+const n = 7;
+printOddNumbers(n); // Output: 1 3 5 7
+
+
+//10.Series using for Loop
+
+
+Function to print the given series using for loop
+function printSeries(n) {
+for (let i = 1; i <= n; i++) {
+console.log(i ** 3);
+}
+}
+
+// Example usage
+const n = 5; // We need to print the series up to the 5th term
+printSeries(n); // Output: 1 8 27 64 125
+
+// Note: In the above code, the expression i ** 3 calculates the cube of i, which gives the corresponding term of the series.
+
+
+//12. Using Continue in For Loops
+
+const n = 10;
+
+for (let i = 1; i <= n; i++) {
+  if (i % 4 === 0) {
+    continue;
+  }
+  if (i % 2 === 0) {
+    console.log(i);
+  }
+}
+
+
+Using Break in for loop
+
+const n = 10;  // initializes variable n to 10
+const m = 4;   // initializes variable m to 4
+
+for (let i = 1; i <= n; i++) {    // starts a loop to iterate from 1 to n
+  console.log(i);                // prints the current number i to the console
+  if (i === m) {                 // checks if i is equal to m
+    break;                       // if i is equal to m, exits the loop using the break statement
+  }
+}
+
+
+//15. Pattern For Loop -1
+
+for (let i = 5; i >= 1; i--) {     // outer loop to iterate from 5 to 1
+  let row = '';                   // initializes an empty string to store each row
+  for (let j = 1; j <= i; j++) {   // inner loop to iterate from 1 to i
+    row += '*';                   // appends a '*' to the row for each iteration
+  }
+  console.log(row);               // prints the row to the console after each iteration of the inner loop
+}
+
+
+16.Pattern While Loop - 2
+
+let i = 5;          // initializes i to 5
+while (i >= 1) {    // starts a while loop that runs as long as i is greater than or equal to 1
+  let j = 1;        // initializes j to 1 at the start of each row
+  let row = '';    // initializes an empty string to store each row
+  while (j <= i) {  // starts another while loop that runs as long as j is less than or equal to i
+    row += '*';     // appends a * character to the row string
+    j++;            // increments j at the end of each iteration of the inner loop
+  }
+  console.log(row); // prints the current row to the console
+  i--;              // decrements i at the end of each iteration of the outer loop
+}
+
+
+// 17.Pattern For Loop -3
+
+
+
+for (let i = 5; i >= 1; i--) {   // starts a for loop that initializes i to 5, runs as long as i is greater than or equal to 1, and decrements i at the end of each iteration
+  let row = '';    // initializes an empty string to store each row
+  for (let j = 1; j <= i; j++) {  // starts another for loop that initializes j to 1, runs as long as j is less than or equal to i, and increments j at the end of each iteration
+    row += '*';     // appends a * character to the row string
+  }
+  console.log(row); // prints the current row to the console
+}
+for (let i = 2; i <= 5; i++) {   // starts another for loop that initializes i to 2, runs as long as i is less than or equal to 5, and increments i at the end of each iteration
+  let row = '';    // initializes an empty string to store each row
+  for (let j = 1; j <= i; j++) {  // starts another for loop that initializes j to 1, runs as long as j is less than or equal to i, and increments j at the end of each iteration
+    row += '*';     // appends a * character to the row string
+  }
+  console.log(row); // prints the current row to the console
+}
+
+
+//18. Pattern For Loop -4
+
+function print_pattern() {
+  /* Function to print the pattern */
+
+  // Loop through each row
+  for (var i = 1; i <= 5; i++) {
+
+    // Initialize an empty string to represent the current row
+    var str = "";
+
+    // Add asterisks to the left side of the row
+    for (var j = 10; j <= i + 9; j++) {
+      str = str + "*";
+    }
+
+    // Add spaces to the middle of the row
+    for (var j = 10; j <= 14 - i; j++) {
+      str = str + " ";
+    }
+
+    // Add asterisks to the right side of the row
+    for (var j = 10; j <= i + 9; j++) {
+      str = str + "*";
+    }
+
+    // Print the current row to the console
+    console.log(str);
+  }
+}
+
+// Call the function to print the pattern
+print_pattern();
+
+
+//19.Pattern While Loop -5
+
+var row = 5;
+
+while (row >= 1) {
+  var output = "";
+  var col = 1;
+
+  while (col <= row) {
+    output += "*";
+    col++;
+  }
+
+  console.log(output);
+  row--;
+}
+
+row = 2;
+
+while (row <= 5) {
+  output = "";
+  var col = 1;
+
+  while (col <= row) {
+    output += "*";
+    col++;
+  }
+
+  console.log(output);
+  row++;
+}
